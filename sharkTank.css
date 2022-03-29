@@ -373,24 +373,6 @@
         border: 2px solid black;
         margin-left: 20%;
     }
-        /*.letter a{*/
-        /*margin-top: -15%;*/
-        /*margin-top: 10%;
-        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-
-        word-wrap: break-word;
-        width: 60%;
-        height: 40%;
-        color: black;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border: 2px solid black;
-        background-color: purple;
-        text-decoration: none;
-        margin-left: 20%;*/
-    }
-
     footer {
         height: 70vh;
         width: 100vw;
