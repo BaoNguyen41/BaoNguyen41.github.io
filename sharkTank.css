@@ -531,7 +531,7 @@ footer {
         display: flex;
         width: 50%;
         height: 5vh;
-        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/americaFlag.jpg");
+        background: url("images/americaFlag.jpg");
         background-repeat:  no repeat;
         background-position: center;
         background-size:  cover;
@@ -893,7 +893,7 @@ footer {
         margin-top: 64vh;
         height: 20vh;
         width: 20vh;
-        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/butlerha.png");
+        background: url("images/butlerha.png");
         background-repeat:  no repeat;
         background-position: center;
         background-size:  cover;
@@ -983,7 +983,7 @@ footer {
         display: flex;
         width: 50%;
         height: 5vh;
-        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/americaFlag.jpg");
+        background: url("images/americaFlag.jpg");
         background-repeat:  no repeat;
         background-position: center;
         background-size:  cover;
