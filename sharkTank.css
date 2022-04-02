@@ -55,7 +55,6 @@ border-bottom: 1px solid black;
     width: 100vw;
     height: 10vh;
     position: relative;
-    background-color: green;
 }
 .sideSticker h20{
     background: url("images/deathPara.png");
@@ -85,39 +84,24 @@ border-bottom: 1px solid black;
 .bottomContent{
     height: 20vh;
     width: 100vw;
-    background-color: pink;
+    margin-top: 50vh;
 }
-.about, .community, .careers, .contact{
-    text-decoration: none;
-    padding-top: -1vh;
-    padding-top: 1%;
-    display: flex;
-    justify-content:  center;
+.bottomContent p{
     height: 20vh;
+    width: 15%;
+    border-left: 1px solid black;
+    background-color: #2F4F4F;
+}
+/*.about, .community, .careers, .contact{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    height: 10vh;
     width: 25%;
     float: left;
-    border: 1px solid black
+    border: 1px solid black;
 
-}
-.about{
-    color: black;
-    background-color: red;
-}
-.history{
-    height: 20vh;
-    width: 20vw;
-    color: white;
-}
-.community{
-    background-color: green;
-}
-.careers{
-    background-color: yellow;
-}
-.contact{
-    background-color: purple;
-}
-
+}*/
 footer {
     height: 10vh;
     width: 98.5vw;
@@ -243,7 +227,7 @@ footer {
     .clearance {
         height: 15%;
         width: 100%;
-        background-color: blue;
+        background-color: lightskyblue;
     }
 
     .navigation {
@@ -309,7 +293,7 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: black;
+
     }
 
     .Royal{
@@ -576,12 +560,11 @@ footer {
     .sideSticker{
         width: 100vw;
         height: 15vh;
-        background-color: black;
     }
     .sideSticker h20{
         height:100%;
         width: 30vw;;
-        margin-left: -5vw;
+        margin-left: -1vw;
     }
     .sideSticker h17{
         height: 100%;
@@ -592,35 +575,40 @@ footer {
         height:100%;
         width: 30vw;
     }
+
     .about, .community, .careers, .contact{
-        padding-top: -1vh;
-        padding-top: 1%;
-        display: flex;
-        justify-content:  center;
-        height: 20vh;
-        width: 25%;
-        float: left;
-        border: 1px solid black
-    
-    }
-    .about{
-        color: black;
-        background-color: red;
-    }
-    .about li a{
-        width: 100%;
-        height: 100%;
+        text-decoration: none;
         display: flex;
         flex-direction: column;
-        background-color: blue;
+        height: 10vh;
+        width: 25%;
+        float: left;
+        border: 1px solid black;
+    
     }
-    .community{
+    .about a, .community a, .careers a, .contact a{
+        height: 20%;
+        width: 100%;
+        text-decoration: none;
+        padding: 0 2vw 0 1vw;
+        display: flex;
+        align-items: center;
+        text-align: left;
+        font-size: 100%;
+    }
+    
+    .about a{
+        color: purple;
+        background-color: red;
+        
+    }
+    .community a{
         background-color: green;
     }
-    .careers{
+    .careers a{
         background-color: yellow;
     }
-    .contact{
+    .contact a{
         background-color: purple;
     }
     
@@ -1056,14 +1044,16 @@ footer {
     .sideSticker h20{
         height: 20vh;
         width: 20vh;
-        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/deathPara.png");
+        background: url("images/deathPara.png");
         float: left;
     }
-
-
-
+    .sideSticker h17{
+        height: 20vw;
+        width: 60vw;
+        float: left;
+    }
     .sideSticker h3{
-        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/welcomeMaid.png");
+        background: url("images/welcomeMaid.png");
         height: 20vh;
         width: 20vh;
         float: right;
