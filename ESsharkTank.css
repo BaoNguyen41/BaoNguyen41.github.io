@@ -1,0 +1,1381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.logo{
+    margin-left: 2.5vw;
+}
+.Royal, h1, h2, h3, h3a{
+    overflow: hidden;
+}
+.Coffee, h1, h2, h3, h3a{
+    overflow: hidden;
+}
+.Bervage, h1, h2, h3, h3a{
+    overflow: hidden;
+}
+.Team, h1, h2, h3, h3a{
+    overflow: hidden;
+}
+
+.Royal h1, .Royal h2, .Royal h3,
+.Coffee h1, .Coffee h2, .Coffee h3,
+.Bervage h1, .Bervage h2, .Bervage h3,
+.Team h1, .Team h2, .Team h3{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    background-color: lightgray;
+}
+
+.Royal h3, .Coffee h3, .Bervage h3, .Team h3{
+border-bottom: 1px solid black;
+}
+
+.orderButton, h1{
+    width: 0;
+    height: 0;
+    font-size: 0;
+}
+
+.language:hover  .dropdown-content {
+    display: block;
+    background-color: white;
+    z-index: 300;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+    color: lightblue;
+}
+.sideSticker h2:hover, .sideSticker h2:active, .sideSticker h2{
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+footer {
+    height: 20vh;
+    width: 98.5vw;
+    background-color: aquamarine;
+    
+}
+
+
+
+.footerContent{
+    width: 99vw;
+    height: 30vw;
+    border-top: 1px solid gray;
+    background-color: lightgreen;
+}
+.footerContent img{
+    width: 20vw;
+    height: 20vw;
+    float: left;
+    margin-left: 39.5vw;
+    margin-top: -10vh;
+    position: relative;
+    display: flex;
+    z-index: 400;
+    border-radius: 100%;
+}
+.footerContent h4{
+    margin-top: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 99vw;
+    height: 2vh;
+    border: 1px solid green;
+
+    float: left;
+}
+.footerContent li{
+    height: 7.5vw;
+    width: 33vw;
+    float: left;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    border: 1px solid gray;
+    
+    
+}
+.footerContent li a{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    float: right;
+    height: 7.5vw;
+    text-decoration: none;
+}
+.footerContent h5{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    width: 99vw;
+    height: 2vh;
+    border: 1px solid green;
+    float: left;
+}
+.media img{
+    /*background: url("images/twitter.png");*/
+    background-repeat:  no repeat;
+        background-position: center;
+        background-size:  cover;
+        border-radius: 10000;
+    height: 10vh;
+    width: 10vh;
+    position: relative;
+    display: flex;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: white ;
+
+    }
+
+    header {
+        width: 98.5vw;
+        height: 20vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .clearance {
+        height: 25%;
+        width: 100%;
+        background-color: blue;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 50%;
+        background-color: white;
+        margin: 0 0 5% 0;
+
+        border: 1px solid gray;
+    }
+
+    .logo {
+        height: 10vh;
+        width: 10vh;
+        border: 2px solid purple;
+        position: absolute;
+        float: left;
+    }
+
+    .logo img {
+        margin: 10%;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+    }
+
+    .orderButton {
+        margin: 1vh 5% 0 0;
+       /* margin-right: 5%;*/
+        width: 30vw;
+        height: 8vh;
+        text-decoration: none;
+        text-align: center;
+        
+        background-color: rgb(56, 56, 141);
+        float: right;
+
+        border: 0.5vh solid black;
+    }
+
+    .orderButton h1 {
+        width: 100%;
+        height: 100%;
+        font-size: 2.5vh;
+        font-family: cursive;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: green;
+
+
+    }
+
+    .signIn{
+        opacity: 0;
+        background-color: black;
+    }
+
+    article {
+        width: 98.5vw;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .Royal{
+        width: 100vw;
+        height: 60vh;
+        background-color: red;
+        word-wrap: break-word;
+        margin-bottom: 5vh;
+        overflow: hidden;
+    }
+
+    .Royal p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Royal h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+
+
+        
+
+    }
+
+    .Royal h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        padding: 0 0 10% 5%;
+
+
+    }
+    .Royal h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+    
+        background-color: white;
+        margin-bottom: 50vh;
+
+    }
+    .Royal h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+
+    .Coffee {
+        
+        width: 100%;
+        height: 60vh;
+        background-color: green;
+        
+        margin-bottom: 5vh;
+    }
+    .Coffee p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Coffee h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+    }
+    .Coffee h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+
+
+        background-color: white;
+        padding-left: 5%;
+    }
+    .Coffee h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+
+    
+        background-color: white;
+
+    }
+    .Coffee h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+
+
+
+    .Bervage {
+        width: 100%;
+        height: 60vh;
+        background-color: blue;
+        margin-bottom: 5vh;
+
+
+        
+    }
+
+    .Bervage p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Bervage h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+ 
+        background-color: white;
+
+
+    }
+    .Bervage h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+
+        background-color: white;
+        padding-left: 5%;
+
+    }
+    .Bervage h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+
+    
+        background-color: white;
+
+    }
+    .Bervage h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+    .Team {
+        width: 100%;
+        height: 60vh;
+        background-color: violet;
+        
+        margin-bottom: 5vh;
+
+    }
+
+    .Team p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Team h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+
+
+
+    }
+    .Team h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        padding-left: 5%;
+
+    }
+    .Team h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+
+    
+        background-color: white;
+
+    }
+    .Team h3 a{
+
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+    
+
+    footer {
+        height: 70vh;
+        width: 100vw;
+        background-color: aquamarine;
+        
+    }
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 501px) and (max-width: 960px) {
+    body {
+        width: 99vw;
+        height: 100vh;
+
+    }
+
+    header {
+        width: 98.5vw;
+        height: 15vh;
+        box-sizing: border-box;
+        overflow: hidden;
+        z-index: 30;
+        position: relative;
+    }
+    .clearance {
+        height: 0;
+        width: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 66.6%;
+        background-color: white;
+        margin: 0 0 5% 0;
+        z-index: 30;
+        border: 1px solid gray;
+    }
+
+    .logo {
+        height: 10vh;
+        width: 10vh;
+        border: 2px solid purple;
+        position: absolute;
+        float: left;
+    }
+
+    .logo img {
+        margin: 10%;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        z-index: 13;
+    }
+
+    .language{
+        width: 10%;
+        height:100%;
+        float: right;
+        position: relative;
+        background-color: black;
+    }
+
+    .language h7{
+        display: flex;
+        width: 50%;
+        height: 5vh;
+        background: url("images/americaFlag.jpg");
+        background-repeat:  no repeat;
+        background-position: center;
+        background-size:  cover;
+        margin: 2.5vh 0 25% 5%;
+        float: left;
+        
+
+    }
+    .language h10{
+        color:white;
+        display: flex;
+        font-size: 4vh;
+
+        width: 100%;
+        height: 100%;
+        margin: 1vh 0 0 100%;
+    }
+    .dropdown-content {
+        flex-direction: column;
+        height: 5vh;
+        width: 200%;
+        display: none;
+        position: absolute;
+        border: 1px solid red;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 500;
+        margin-top: 10vh;
+        background-color: white;
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        font-size: 2vh;
+        display: flex;
+        align-items: center;
+        height: 5vh;
+        width: 90%;
+        position: absolute;
+        border-bottom: 2% solid black;
+        z-index: 500;
+    } 
+    
+
+
+    .signIn{
+        width: 18%;
+        height: 8vh;
+        margin: 1vh 1vw;
+        text-decoration: none;
+        text-align: center;
+        word-wrap: break-word;
+        font-size: calc(3vh * 9/16);
+        overflow: hidden ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+
+    }
+
+    .signIn:hover {
+        border: 1px solid black;
+    }
+    article {
+        width: 99vw;
+        height: 109vh;
+        padding: 0;
+  
+        box-sizing: border-box;
+ 
+        overflow: hidden;
+        z-index: 1;
+        position: relative;
+    }
+    .advertise{
+        height: 100%;
+        width: 100%; 
+        z-index: 11;
+    }
+    .Royal{
+        width: 42.5%;
+        height: 40vh;
+        background-color: red;
+        float: left;
+        margin: 0 0 5vh 5%;
+        overflow: hidden;
+
+    }
+
+    .Royal p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Royal h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+
+        font-size: 100%;
+   
+
+
+        
+
+    }
+
+    .Royal h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        padding: 0 0 10% 5%;
+        font-size: 100%;
+
+
+        
+
+    }
+    .Royal h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+
+    
+        background-color: white;
+        margin-bottom: 50vh;
+
+    }
+    .Royal h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+
+    .Coffee {
+        width: 42.5%;
+        height: 40vh;
+        background-color: green;
+        float: right;
+        margin-right: 5%;
+        margin-bottom: 5vh;
+        overflow: hidden;
+    }
+    .Coffee p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Coffee h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+  
+
+    }
+    .Coffee h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        word-wrap: break-word;
+        overflow: hidden;
+        background-color: white;
+        padding-left: 5%;
+    }
+    .Coffee h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+
+    
+        background-color: white;
+
+    }
+    .Coffee h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+
+    }
+
+
+
+
+    .Bervage {
+        width: 42.5%;
+        height: 40vh;
+        background-color: blue;
+        margin-bottom: 5vh;
+ 
+        float: left;
+        margin: 0 0 5vh 5%;
+
+        
+    }
+
+    .Bervage p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Bervage h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+
+        background-color: white;
+
+
+    }
+    .Bervage h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+
+        background-color: white;
+        padding-left: 5%;
+
+    }
+    .Bervage h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+ 
+    
+        background-color: white;
+
+    }
+    .Bervage h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+    .Team {
+        width: 42.5%;
+        height: 40vh;
+        background-color: violet;
+        float: right;
+        margin: 0 5% 5vh 0;
+
+    }
+
+    .Team p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Team h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+        
+
+
+    }
+    .Team h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        padding-left: 5%;
+        
+    }
+    .Team h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+        
+    
+        background-color: white;
+
+    }
+    .Team h3 a{
+ 
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+    .sideSticker{
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+    .sideSticker h20{
+        height: 20vh;
+        width: 20vh;
+        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/deathPara.png");
+        background-repeat:  no repeat;
+        background-position: center;
+        background-size:  cover;
+        float: left;
+    }
+
+
+
+    .sideSticker h3{
+        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/welcomeMaid.png");
+        background-repeat:  no repeat;
+        background-position: center;
+        background-size:  cover;
+        height: 20vh;
+        width: 20vh;
+        float: right;
+        
+    }
+    footer {
+        height: 30vh;
+        width: 98.5vw;
+        background-color: aquamarine;
+        
+    }
+
+}
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: white ;
+
+    }
+
+    header {
+        width: 98.5vw;
+        height: 20vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .clearance {
+        height: 0;
+        width: 0;
+    }
+
+    .navigation {
+        width: 100%;
+        height: 50%;
+        background-color: white;
+        margin: 0 0 5% 0;
+
+        border: 1px solid gray;
+    }
+
+    .logo {
+        height: 10vh;
+        width: 10vh;
+        border: 2px solid purple;
+        position: absolute;
+        float: left;
+        margin-left: 1%;
+    }
+
+    .language:hover  .dropdown-content {
+        display: block;
+    }
+
+    .logo img {
+        margin: 10%;
+        width: 80%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        
+    }
+
+    .language{
+        width: 10%;
+        height:100%;
+        float: right;
+        position: relative;
+        background-color: black;
+    }
+
+    .language h7{
+        display: flex;
+        width: 50%;
+        height: 5vh;
+        background: url("/Users/Anbu_Black_OP/Documents/myProject/images/americaFlag.jpg");
+        background-repeat:  no repeat;
+        background-position: center;
+        background-size:  cover;
+        margin: 2.5vh 0 25% 10%;
+        float: left;
+        
+
+    }
+    .language h10{
+        color:white;
+        display: flex;
+        font-size: 4vh;
+
+        width: 100%;
+        height: 100%;
+        margin: 1vh 0 0 100%;
+    }
+    .dropdown-content {
+        flex-direction: column;
+        height: 5vh;
+        width: 200%;
+        display: none;
+        position: absolute;
+        border: 1px solid black;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 500 !important;
+        margin-top: 10vh;
+    }
+    .dropdown-content a{
+        text-decoration: none;
+        font-size: 2vh;
+        display: flex;
+        align-items: center;
+        height: 5vh;
+        width: 90%;
+        position: absolute;
+        border-bottom: 2% solid black;
+    } 
+
+    .signIn{
+        width: 10%;
+        height: 8vh;
+        margin: 1vh 1vw;
+        text-decoration: none;
+        text-align: center;
+        word-wrap: break-word;
+        font-size: calc(3vh * 9/16);
+        overflow: hidden ;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        float: right;
+
+    }
+    .signIn:hover {
+        border: 1px solid black;
+    }
+
+    article {
+        width: 99vw;
+        height: 130vh;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    .Royal{
+        width: 40%;
+        height: 60vh;
+        background-color: red;
+        margin-bottom: 5vh;
+        overflow: hidden;
+        float: left;
+        margin-left: 7.5%;
+
+    }
+
+    .Royal p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Royal h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+        
+
+        
+
+    }
+
+    .Royal h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        padding: 0 0 10% 5%;
+        
+        
+
+    }
+    .Royal h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        margin-bottom: 50vh;
+        border-bottom: 1px solid black;
+
+    }
+    .Royal h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+
+    .Coffee {
+        
+        width: 40%;
+        height: 60vh;
+        background-color: green;
+        margin-bottom: 5vh;
+        
+        float: right;
+        margin-right: 7.5%;
+    }
+    .Coffee p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Coffee h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+        
+    }
+    .Coffee h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        
+
+
+        background-color: white;
+        padding-left: 5%;
+    }
+    .Coffee h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+        
+    
+        background-color: white;
+
+    }
+    .Coffee h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+
+
+
+    .Bervage {
+        width: 40%;
+        height: 60vh;
+        background-color: blue;
+        margin-bottom: 5vh;
+        
+        float: left;
+        margin-left: 7.5%;
+
+        
+    }
+
+    .Bervage p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Bervage h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        
+        background-color: white;
+
+
+    }
+    .Bervage h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        
+        background-color: white;
+        padding-left: 5%;
+
+    }
+    .Bervage h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+        
+    
+        background-color: white;
+
+    }
+    .Bervage h3 a{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+    .Team {
+        width: 40%;
+        height: 60vh;
+        background-color: violet;
+        margin-bottom: 5vh;
+        
+        float: right;
+        margin-right: 7.5%;
+    }
+
+    .Team p{
+        color: black;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .Team h1 {
+
+        width: 100%;
+        height: 10%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        padding-left: 5%;
+        background-color: white;
+
+
+    }
+    .Team h2 {
+        width: 100%;
+        height: 20%;
+        color: black;
+        justify-content: left;
+        background-color: white;
+        padding-left: 5%;
+        
+    }
+    .Team h3{
+        width: 100%;
+        height: 10%;
+        color: black;
+        justify-content: left;
+        
+    
+        background-color: white;
+
+    }
+    .Team h3 a{
+        
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        word-wrap: break-word;
+        width: 60%;
+        height: 80%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border: 2px solid black;
+        margin-left: 20%;
+    }
+
+    footer {
+        height: 70vh;
+        width: 98.5vw;
+        background-color: aquamarine;
+    }
+    .footerContent{
+        width: 99vw;
+        height: 20vw;
+        background-color: lightgreen;
+    }
+    .footerContent img{
+        width: 15vh;
+        height: 15vh;
+        float: left;
+        margin: 2.5vw;
+        border-radius: 2.5vw;
+    }
+}
