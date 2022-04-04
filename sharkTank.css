@@ -90,37 +90,60 @@
         .sideSticker h20, .sideSticker h17, .sideSticker h3{
             border-bottom: 1px solid black;
         }
+    .bottomContent{
+        height: 30vh;
+        width: 100vw;
+    }
+        .bottomContent p{
+            height: 20vh;
+            width: 20vw;
+            font-size: 90%;
+        }
+        .about, .community, .customer, .careers, .contact{
+            text-decoration: none;
+            flex-direction: row;
+            float: left;
+        }
+        .about a, .community a, .customer a, .careers a, .contact a{
+            height: 20%;
+            width: 80%;
+            text-decoration: none;
+            margin: 0 0 0.1vh 2vw;
+            display: flex;
 
+            text-align: left;
+            font-size: 100%;
+            color: blue;
+        }
+        .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
+            text-decoration: underline;
+        }
 footer {
     height: 10vh;
     width: 100vw;
-    background-color: aquamarine;
+
 }
-
-
     .footerContent{
         width: 100vw;
-        height: 30vw;
-        border-top: 1px solid gray;
-        background-color: lightgreen;
+        height: 3vw;
     }
         .footerContent img{
-            width: 20vw;
-            height: 20vw;
+            width: 30vw;
+            height: 30vw;
             float: left;
-            margin-left: 39.5vw;
-            margin-top: -10vh;
+            margin-left: 35vw;
+            margin-top: -5vh;
             position: relative;
             display: flex;
-            z-index: 400;
-            border-radius: 100%;
+            z-index: 4;
+            border-radius: 50%;
         }
         .footerContent h4{
             margin-top: 1vh;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: black;
+            color: blue;
             width: 100vw;
             padding: 0 10vw 0 10vw;
             height: 4vh;
@@ -129,27 +152,61 @@ footer {
             float: left;
         }
         .footerContent li{
-            height: 7.5vw;
-            width: 33.3333vw;
+            height: 7.5vh;
+            width: calc(100vw / 3);
             float: left;
             list-style-type: none;
-            flex-direction: row;
-            
-            
+            display: flex;
+            justify-content: center;
         }
         .footerContent li a{
-            color: black;
+            color: blue;
             display: flex;
             flex-direction: row;
             align-items: center;
-
-            width: 100vw;
+            width: calc(100vw / 3);
             float: right;
-            height: 7.5vw;
+            height: 7.5vh;
             text-decoration: none;
+            padding: 0 4vw;
         }
 
+        .media{
+            width: 80vw;
+            float: left;
+            height: 5vh;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+            .media p {
+                height: 100%;
+                width: 20%;
 
+                padding-right: 1%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+    
+            .media a{
+                width: 5vw;
+                margin-right: 2vw;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+    
+            .media a img{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
 
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
@@ -227,7 +284,7 @@ footer {
 
     article {
         width: 100vw;
-        height: 200vh;
+        height: 310vh;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -486,14 +543,36 @@ footer {
     .bottomContent{
         height: 20vh;
         width: 100vw;
-        background-color: lightcyan;
     }
+        .bottomContent p{
+            height: 20vh;
+            width: calc(100vw/3);
+            font-size: 90%;
+        }
+        .about, .community, .customer, .careers, .contact{
+            text-decoration: none;
+            flex-direction: column;
+            float: left;
+        }
+        .about a, .community a, .customer a, .careers a, .contact a{
+            height: 20%;
+            width: 80%;
+            text-decoration: none;
+            margin: 0 0 0.1vh 2vw;
+            display: flex;
+            text-align: left;
+            font-size: 100%;
+            color: blue;
+        }
+        .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
+            text-decoration: underline;
+        }
 
     footer {
-        height: 10vh;
+        height: 35vh;
         width: 100vw;
-        background-color: aquamarine;
-        margin-top: 110vh;
+        margin-top: 5vh;
+        background-color: lightgray;
         
     }
     .media{
@@ -501,34 +580,41 @@ footer {
         float: left;
         height: 5vh;
         display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
         flex-direction: row;
         position: relative;
-        background-color: green;
     }
+    
     .media p {
         height: 100%;
-        width: 10%;
-        background-color: orange;
+        width: 100%;
         font-size: 100%;
-        margin-left: 30%;
+
         padding-right: 1%;
         display: flex;
         align-items: center;
-        justify-content: flex-end;
-    
-    }
-    .media a{
-        width: 100%;
-        height: 100%;
-        float: left;
-    
-    }
-    .media a{
-        width: 6%;
-        height: 100%;
-        display: flex;
-        align-items: center;
         justify-content: center;
+    
+    }
+    .jp_social{
+        height: 5vh;
+        width: 50vw;
+        float: left;
+        display: flex;
+        position: relative;
+    }
+    .jp_social a{
+        height: 5vh;
+        width: 25%;
+        display: flex;
+        flex-direction: row;
+    }
+    .jp_social a img{
+        margin-top: 0.1vh;
+        height: 10vw;
+        width: 10vw;
+        float: left;
         position: relative;
     }
 }
@@ -661,11 +747,10 @@ footer {
 
     article {
         width: 100vw;
-        height: 109vh;
+        height: 130vh;
         padding: 0;
   
         box-sizing: border-box;
- 
         overflow: hidden;
         z-index: 1;
         position: relative;
@@ -939,33 +1024,101 @@ footer {
         position: relative;
     }
 
-    .sideSticker h20{
-        height: 20vh;
-        width: 20vh;
-        background: url("images/deathPara.png");
-        float: left;
+footer {
+    height: 20vh;
+    width: 100vw;
+    background-color: yellow;
+}
+    .footerContent img, .footerContent h4, .footerContent li, .footerContent li a{
+        display: flex;
+            align-items: center;
+            justify-content: center;
+    }
+        .footerContent img{
+            width: 15vh;
+            height: 15vh;
+            float: left;
+            margin-left: calc(50vw - 7.5vh);
+            margin-top: -5vh;
+            position: relative;
+            display: flex;
+            z-index: 4;
+        }
+        .footerContent h4{
+            margin-top: 1vh;
+            
+            color: blue;
+            width: 100vw;
+            padding: 0 10vw 0 10vw;
+            height: 4vh;
+            font-size: 100%;
 
-    }
-    .sideSticker h17{
-        height: 20vw;
-        width: 60vw;
-        float: left;
-    }
-    .sideSticker h3{
-        background: url("images/welcomeMaid.png");
-        height: 20vh;
-        width: 20vh;
-        float: right;
-        
-    }
-    footer {
-        height: 30vh;
+            float: left;
+        }
+        .footerContent li{
+            height: 5vh;
+            width: calc(100vw / 3);
+            float: left;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        .footerContent li a{
+            color: blue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: calc(100vw / 3);
+            float: right;
+            height: 7.5vh;
+            text-decoration: none;
+            padding: 0 4vw;
+        }
+    .media{
         width: 100vw;
-        background-color: aquamarine;
-        
+        float: right;
+        height: 5vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-direction: row;
+        position: relative;
     }
-
-    
+        .media p {
+            height: 100%;
+            width: 100%;
+            font-size: 100%;
+            color: blue;
+            padding-right: 1%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        
+        }
+    .jp_social{
+        height: 5vh;
+        width: 100vw;
+        float: left;
+        display: flex;
+        position: relative;
+    }
+        .jp_social, .jp_social a, .jp_social a img{
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-start;
+        }
+        .jp_social a{
+            height: 5vh;
+            width: 10%;
+            display: flex;
+            flex-direction: row;
+        }
+        .jp_social a img{
+            height: 6vh;
+            width: 6vh;
+            float: left;
+            position: relative;
+        }
 
 }
 
@@ -992,9 +1145,7 @@ footer {
     .navigation {
         width: 100%;
         height: 10%;
-        background-repeat:  no repeat;
-        background-position: center;
-        background-size:  cover;
+        background-color: white;
         margin: 0 0 5% 0;
         border: 1px solid gray;
         position: fixed;
@@ -1082,20 +1233,6 @@ footer {
         width: 90%;
         position: relative;
     }
-    /*.dropdown-content p{
-        
-        
-        border-bottom: 2% solid black;
-    } 
-    .dropdown-content a{
-        text-decoration: none;
-        
-
-        height: 5vh;
-        width: 90%;
-        position: relative;
-    } */
-
     .signIn{
         width: 10%;
         height: 8vh;
@@ -1382,47 +1519,10 @@ footer {
         border: 2px solid black;
         margin-left: 20%;
     }
-
-    .bottomContent{
-        height: 20vh;
-        width: 100vw;
-
-    }
-    .bottomContent p{
-        height: 20vh;
-        width: 20%;
-        font-size: 90%;
-        border-bottom: 1px solid black;
-    }
-    .about, .community, .customer, .careers, .contact{
-        text-decoration: none;
-        flex-direction: column;
-        height: 10vh;
-        width: 55%;
-        float: left;
-    }
-    .mission{
-        margin-bottom: 100vh;
-    }
-    .about a, .community a, .customer a, .careers a, .contact a{
-        height: 20%;
-        width: 80%;
-        text-decoration: none;
-        margin: 0 0 0.1vh 2vw;
-        display: flex;
-
-        text-align: left;
-        font-size: 100%;
-        color: blue;
-    }
-    .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
-        text-decoration: underline;
-    }
     footer {
         margin-top: 10vh;
         height: 20vh;
         width: 100vw;
-        background-color: green;
     }
     .footerContent{
         width: 100%;
@@ -1450,7 +1550,7 @@ footer {
         }
         .footerContent li{
             height: 7.5vw;
-            width: 20vw;
+            width: calc(80vw / 3);
             float: left;
             list-style-type: none;
             flex-direction: row;
