@@ -19,6 +19,13 @@
             background-position: center top;
             background-size:  cover;
         }
+        .logo a:hover, .footerContent img:hover{
+            border: 1px solid white;
+        }
+    
+        .language:hover{
+            border: 1px solid white;
+        }
     .Royal, h1, h2, h3, h3a{
         overflow: hidden;
     }
@@ -34,7 +41,7 @@
         .Royal h1, .Royal h2, .Royal h3, .Coffee h1, .Coffee h2, .Coffee h3, .Bervage h1, .Bervage h2, .Bervage h3, .Team h1, .Team h2, .Team h3{
             border-left: 1px solid black;
             border-right: 1px solid black;
-            background-color: lightgray;
+            background-color: white;
         }
 
         .Royal h3, .Coffee h3, .Bervage h3, .Team h3{
@@ -88,7 +95,7 @@
             background-size:  cover;
         }
         .sideSticker h20, .sideSticker h17, .sideSticker h3{
-            border-bottom: 1px solid black;
+            border-bottom: 1px solid white;
         }
     .bottomContent{
         height: 30vh;
@@ -98,7 +105,6 @@
             height: 20vh;
             width: 20vw;
             font-size: 90%;
-            background-color: lightgrey;
         }
         .about, .community, .customer, .careers, .contact{
             text-decoration: none;
@@ -114,7 +120,7 @@
 
             text-align: left;
             font-size: 100%;
-            color: blue;
+            color: white;
         }
         .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
             text-decoration: underline;
@@ -122,6 +128,7 @@
 footer {
     height: 10vh;
     width: 100vw;
+    border-top: 1px solid white;
 
 }
     .footerContent{
@@ -208,13 +215,15 @@ footer {
                 justify-content: center;
                 position: relative;
             }
-
+            header, article, footer, .navigation{
+                background-color: black;
+            }
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
     body {
         width: 100vw;
         height: auto;
-        background-color: white ;
+        background-color: black ;
 
     }
 
@@ -225,12 +234,12 @@ footer {
         padding: 0;
         box-sizing: border-box;
         margin-bottom: -3vh;
+
     }
 
     .navigation {
         width: 100%;
         height: 10%;
-        background-color: white;
         margin: 0 0 5% 0;
         border: 1px solid gray;
         position: fixed;
@@ -263,8 +272,7 @@ footer {
         text-decoration: none;
         text-align: center;
         float: right;
-
-        border: 0.5vh solid black;
+        border: 0.5vh solid white;
     }
 
     .orderButton h1 {
@@ -562,7 +570,7 @@ footer {
             display: flex;
             text-align: left;
             font-size: 100%;
-            color: blue;
+            color: white;
         }
         .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
             text-decoration: underline;
@@ -572,7 +580,6 @@ footer {
         height: 35vh;
         width: 100vw;
         margin-top: 5vh;
-        background-color: lightgray;
         
     }
     .media{
@@ -635,13 +642,13 @@ footer {
         overflow: hidden;
         z-index: 30;
         position: relative;
+
     }
     
 
     .navigation {
         width: 100%;
         height: 15vh;
-        background-color: white;
         z-index: 30;
         border: 1px solid gray;
         position: fixed;
@@ -687,7 +694,7 @@ footer {
 
     }
     .language h10{
-        color:black;
+        color:white;
         display: flex;
         font-size: 3vh;
         width: 30%;
@@ -742,7 +749,7 @@ footer {
 
     }
     .signIn:hover {
-        border: 1px solid black;
+        border: 1px solid white;
     }
 
     article {
@@ -1025,7 +1032,7 @@ footer {
     }
 
 footer {
-    height: 20vh;
+    height: 32vh;
     width: 100vw;
 }
     .footerContent img, .footerContent h4, .footerContent li, .footerContent li a{
@@ -1127,7 +1134,7 @@ footer {
     body {
         margin: 0;
         padding: 0;
-        background-color: white ;
+        background-color: black ;
 
     }
 
@@ -1137,14 +1144,12 @@ footer {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color: white;
     }
     
 
     .navigation {
         width: 100%;
         height: 10%;
-        background-color: white;
         margin: 0 0 5% 0;
         border: 1px solid gray;
         position: fixed;
@@ -1194,7 +1199,7 @@ footer {
 
     }
     .language h10{
-        color:black;
+        color:white;
         display: flex;
         font-size: 4vh;
 
@@ -1204,12 +1209,12 @@ footer {
     }
     .language:hover  .dropdown-content {
         display: block;
-        background-color: white;
+        background-color: black;
     }
     
     .dropdown-content a:hover {
         text-decoration: underline;
-        color: green; 
+        color: gray; 
     }
     .dropdown-content {
         flex-direction: column;
@@ -1217,10 +1222,9 @@ footer {
         width: 200%;
         display: none;
         position: absolute;
-        border: 1px solid black;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 500 !important;
-        margin-top: 10vh;
+        border: 1px solid white;
+        z-index: 5 !important;
+        margin-top: 9.5vh;
     }
     .dropdown-content p, .dropdown-content a{
         display: flex;
@@ -1229,8 +1233,14 @@ footer {
         font-size: 2vh;
         text-decoration: none;
         height: 5vh;
-        width: 90%;
+        width: 100%;
         position: relative;
+    }
+    .dropdown-content p{
+        color: white;
+    }
+    .dropdown-content a{
+        color: green;
     }
     .signIn{
         width: 10%;
@@ -1248,12 +1258,12 @@ footer {
 
     }
     .signIn:hover {
-        border: 1px solid black;
+        border: 1px solid white;
     }
 
     article {
         width: 100vw;
-        height: 157vh;
+        height: 167vh;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -1520,7 +1530,7 @@ footer {
     }
     footer {
         margin-top: 10vh;
-        height: 40vh;
+        height: 25vh;
         width: 100vw;
     }
     .footerContent{
@@ -1540,7 +1550,6 @@ footer {
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            color: black;
             width: 80vw;
             padding: 0 10vw 0 10vw;
             height: 4vh;
@@ -1550,59 +1559,63 @@ footer {
         .footerContent li{
             width: 100vw;
             height: 7.5vw;
-            width: calc((96vw -15vh)/ 3.4);
+            width: calc((90vw -15vh)/ 3.4);
             float: left;
             list-style-type: none;
             flex-direction: row;
-            background-color: pink;
         }
         .footerContent li a{
-            height: 40%;
+            height: 50%;
             width: calc(80vw/3);
             font-size: 1.5vh;
             color: blue;
             text-decoration: none;
-            background-color: red;
         }
         
         .footerContent li a:hover{
             text-decoration: underline;
             color: green;
         }
-    .media{
-        width: 80vw;
-        float: left;
-        height: 5vh;
-        display: flex;
-        flex-direction: row;
-        position: relative;
-    }
-        .media p {
-            height: 100%;
-            width: 20%;
-            margin-left: 30%;
-            padding-right: 1%;
+        .media{
+            width: 20vw;
+            float: left;
+            height: 5vh;
             display: flex;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        .media a{
-            width: 5vw;
-            margin-right: 2vw;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
         }
-
-        .media a img{
-            width: 100%;
-            height: 100%;
+            .media p {
+                height: 100%;
+                width: 100%;
+                color: blue;
+                padding-right: 10%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                font-size: 2vw;
+            }
+        .jp_social{
+            height: 5vh;
+            width: 60vw;
+            float: left;
             display: flex;
-            align-items: center;
-            justify-content: center;
             position: relative;
         }
+            .jp_social, .jp_social a, .jp_social a img{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            .jp_social a{
+                height: 5vh;
+                width: 10%;
+                display: flex;
+                float: left;
+                flex-direction: row;
+            }
+            .jp_social a img{
+                height: 6vh;
+                width: 6vh;
+                float: left;
+                position: relative;
+            }
 }
