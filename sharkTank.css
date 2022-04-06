@@ -14,7 +14,7 @@
         margin-left: 2.5vw;
     }
         .logo a{
-            background: url("images/ourLogo.png");
+            background: url("images/komi.png");
             background-repeat:  no repeat;
             background-position: center top;
             background-size:  cover;
@@ -42,9 +42,8 @@
         overflow: hidden;
     }
         .Royal h1, .Royal h2, .Royal h3, .Coffee h1, .Coffee h2, .Coffee h3, .Bervage h1, .Bervage h2, .Bervage h3, .Team h1, .Team h2, .Team h3{
-            border-left: 1px solid black;
-            border-right: 1px solid black;
             background-color: white;
+            font-size: 2vw;
         }
 
         .Royal h3, .Coffee h3, .Bervage h3, .Team h3{
@@ -326,7 +325,7 @@ footer {
         display: flex;
         align-items: center;
         justify-content: left;
-        padding-left: 5
+        padding-left: 5;
 
 
         
@@ -1263,7 +1262,7 @@ footer {
 
     article {
         width: 100vw;
-        height: 167vh;
+        height: 177vh;
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -1288,7 +1287,7 @@ footer {
         justify-content: center;
     }
     .Royal h1 {
-
+        font-size: 2vw;
         width: 100%;
         height: 10%;
         color: black;
@@ -1296,7 +1295,6 @@ footer {
         align-items: center;
         justify-content: left;
         padding-left: 5%;
-        
 
         
 
