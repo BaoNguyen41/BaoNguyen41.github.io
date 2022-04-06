@@ -37,7 +37,6 @@ body {
     }
     .pageContent h1, .pageContent h4{
         color: white;
-        border-bottom: 1px solid gray;
     }
     .pageContent h1{
         display: flex;
@@ -103,22 +102,26 @@ body {
             text-decoration: underline;
             color: blue;
         }
-        .drinks, .food{
+        .contact{
             margin-top: 2.5vh;
-            height: 40vh;
-            width: 100%;
+            height: 20vh;
+            width: 60%;
+            margin-left: 20%;
+            background-color: white;
         }
-        .drinks a, .food a{
-            width: 50%;
-            height: 20%;
+        .contact a{
+            width: 25%;
+            height: 80%;
+            
             display: flex;
             align-items: center;
-            float: left;
+            float: right;
             margin-bottom: 2.5%;
             text-decoration: none;
             color: white
         }
-        .drinks a img, .food a img{
+        .contact a img{
+            float: right;
             width: 8vh;
             height: 100%;
             margin-right: 5%;
@@ -128,6 +131,41 @@ body {
             background-size:  cover;
             border-radius: 50%;
         }
+        .quikLink{
+            margin-top: 2.5vh;
+            height: 20vh;
+            width: 100%;
+            background-color: green;
+        }
+        .general,.account, .reward{
+            height: 40%;
+            width: calc(100% / 3);
+            float: left;
+            background-color: red;
+        }
+        .general h13,.account, .reward{
+
+            }
+            .general,.account, .reward{
+            }
+        /*.quikLink h13{
+            width: calc(100%/3);
+            height: 10%;
+            display: flex;
+            float: left;
+            margin-bottom: 2.5%;
+            text-decoration: none;
+            color: white;
+            background-color: red;
+        }
+        .quikLink h2{
+            width: 100%;
+            width: 40%;
+           /* float: left;*/
+           /* display: flex;*/
+            background-color: yellow;
+        }*/
+
         .footerContent{
             width: 100%;
             height: 100%;
@@ -750,12 +788,13 @@ footer {
             height: 100vh;
             float: left;
             padding: 0 2vw;
+            background-color: pink;
         }
             .pageContent h1{
                 height: 10%;
                 width: 100%;
                 font-size: calc(4vh * 9/16);
-                color: blue;
+                color: white;
          
             }
 
