@@ -69,7 +69,7 @@
     }
         .Royal h1, .Royal h2, .Royal h3, .Coffee h1, .Coffee h2, .Coffee h3, .Bervage h1, .Bervage h2, .Bervage h3, .Team h1, .Team h2, .Team h3{
             background-color: white;
-            font-size: 2vw;
+            font-size: 2vh;
             font-family:Georgia, 'Times New Roman', Times, serifF
         }
         .Royal h1, .Coffee h1, .Bervage h1, .Team h1{
@@ -84,6 +84,12 @@
             background-color: #FAEBD7;
             color: #2F4F4F;
         }
+        .Royal{
+            background: url(images/home.png);
+           background-repeat:  no repeat;
+           background-position: center;
+           background-size:  cover;
+       }
         .Coffee{
              background: url(images/drinklel.png);
             background-repeat:  no repeat;
