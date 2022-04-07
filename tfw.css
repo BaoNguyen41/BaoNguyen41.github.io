@@ -1,0 +1,456 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    .navigation{
+        background-repeat:  no repeat;
+        background-position: center;
+         background-size:  cover;
+        position: fixed;
+        z-index: 2;
+    }
+    .socialMedia{
+        height: 10vh;
+        width: 60vw;
+        float: left;
+        display: flex;
+        position: relative;
+    }
+        .socialMedia, .socialMedia a, .socialMedia a img{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .socialMedia a{
+            height: 5vh;
+            width: 10%;
+            display: flex;
+            float: left;
+            flex-direction: row;
+        }
+        .socialMedia a img{
+            height: 6vh;
+            width: 6vh;
+            float: left;
+            position: relative;
+        }
+    .logo{
+        margin-left: calc(50vw - 20vh);
+    }
+        .logo a{
+            background: url("images/sayLess.png");
+            background-repeat:  no repeat;
+            background-position: center top;
+            background-size:  cover;
+            border: 1px solid gray;
+        }
+        .logo a:hover{
+            border: 1px solid white;
+        }
+    
+        .language:hover{
+            border: 1px solid white;
+        }
+        .dropdown-content p{
+            color: white;
+        }
+    .Royal, h1, h2, h3, h3a{
+        overflow: hidden;
+    }
+    .Coffee, h1, h2, h3, h3a{
+        overflow: hidden;
+    }
+    .Bervage, h1, h2, h3, h3a{
+        overflow: hidden;
+    }
+    .Team, h1, h2, h3, h3a{
+        overflow: hidden;
+    }
+        .Royal h1, .Royal h2, .Royal h3, .Coffee h1, .Coffee h2, .Coffee h3, .Bervage h1, .Bervage h2, .Bervage h3, .Team h1, .Team h2, .Team h3{
+            background-color: white;
+            font-size: 2vw;
+            font-family:Georgia, 'Times New Roman', Times, serifF
+        }
+        .Royal h1, .Coffee h1, .Bervage h1, .Team h1{
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .Royal h3, .Coffee h3, .Bervage h3, .Team h3{
+        border-bottom: 1px solid black;
+        }
+        .Royal h3 a:hover, .Coffee h3 a:hover, .Bervage h3 a:hover, .Team h3 a:hover {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #FAEBD7;
+            color: #2F4F4F;
+        }
+        .Coffee{
+             background: url(images/drinklel.png);
+            background-repeat:  no repeat;
+            background-position: center;
+            background-size:  cover;
+        }
+        .Bervage{
+            background: url(images/food1.png);
+            background-repeat:  no repeat;
+            background-position: center;
+            background-size:  cover;
+        }
+        .Team{
+            background: url(images/team.png);
+            background-repeat:  no repeat;
+                background-position: center;
+                background-size:  cover;
+        }
+    .orderButton, h1{
+        width: 0;
+        height: 0;
+        font-size: 0;
+    }
+
+    .language:hover  .dropdown-content {
+        display: block;
+        background-color: black;
+    }
+
+    .bottomContent{
+        height: 30vh;
+        width: 100vw;
+    }
+        .bottomContent p{
+            height: 20vh;
+            width: 20vw;
+            font-size: 90%;
+            background-color: white;
+            margin-top: 5vh;
+            border-bottom: 1px solid black;
+        }
+        .about, .community, .customer, .careers, .contact{
+            text-decoration: none;
+            flex-direction: row;
+            float: left;
+        }
+        .about a, .community a, .customer a, .careers a, .contact a{
+            height: 20%;
+            width: 80%;
+            text-decoration: none;
+            margin: 0 0 0.1vh 2vw;
+            display: flex;
+
+            text-align: left;
+            font-size: 100%;
+            color: black;
+        }
+        .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
+            text-decoration: underline;
+            color: lightblue;
+        }
+footer {
+    height: 10vh;
+    width: 100vw;
+    border-top: 1px solid black;
+    background-color: white;
+}
+    .footerContent{
+        width: 100vw;
+        height: 3vw;
+    }
+        .footerContent img{
+            width: 20vw;
+            height: 20vw;
+            float: left;
+            margin-left: 35vw;
+            margin-top: -5vh;
+            position: relative;
+            display: flex;
+            z-index: 4;
+            border-radius: 50%;
+        }
+        .footerContent h4{
+            margin-top: 1vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: blue;
+            width: 100vw;
+            padding: 2% 10vw;
+            height: 4vh;
+            font-size: 100%;
+            float: left;
+        }
+        .footerContent li{
+            height: 7.5vh;
+            width: calc(100vw / 3);
+            float: left;
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+        }
+        .footerContent li a{
+            color: blue;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: calc(100vw / 3);
+            float: right;
+            height: 7.5vh;
+            text-decoration: none;
+            padding: 0 4vw;
+        }
+
+        .media{
+            width: 80vw;
+            float: left;
+            height: 5vh;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+        }
+            .media p {
+                height: 100%;
+                width: 20%;
+
+                padding-right: 1%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+            }
+    
+            .media a{
+                width: 5vw;
+                margin-right: 2vw;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+    
+            .media a img{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+            }
+            header, article, .navigation{
+                background-color: black;
+            }
+            article{
+                width: 100vw;
+                height: 80vh;
+                background: url(images/cafeBaka.png);
+                background-repeat:  no repeat;
+                background-position: center;
+                background-size:  cover;
+            }
+            .tfw{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family:'Courier New', Courier, monospace;
+                font-size: 5vw;
+                color: white;
+            }
+
+
+
+
+/*--------------------------------------------------------------------------------------------------------------*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black ;
+
+}
+
+header {
+    width: 100vw;
+    height: 15vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.navigation {
+    width: 100%;
+    height: 10%;
+    margin: 0 0 5% 0;
+    border: 1px solid gray;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo {
+    height: 20vh;
+    width: 20vh;
+    position: absolute;
+    float: left;
+    margin-left: calc(50vw - 10vh);
+    z-index: 4;
+}
+
+.logo a {
+    margin: 10%;
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 7;
+}
+
+.language{
+    width: 10%;
+    height:100%;
+    float: right;
+    position: relative;
+}
+
+.language h7{
+    display: flex;
+    width: 50%;
+    height: 5vh;
+    background: url("images/americaFlag.jpg");
+    background-repeat:  no repeat;
+    background-position: center;
+    background-size:  cover;
+    margin: 2.5vh 0 25% 10%;
+    float: left;
+    
+
+}
+.language h10{
+    color:white;
+    display: flex;
+    font-size: 4vh;
+
+    width: 100%;
+    height: 100%;
+    margin: 1vh 0 0 100%;
+}
+
+.dropdown-content a:hover {
+    text-decoration: underline;
+    color: gray; 
+}
+.dropdown-content {
+    flex-direction: column;
+    height: 15vh;
+    width: 200%;
+    display: none;
+    position: absolute;
+    border: 1px solid white;
+    z-index: 5 !important;
+    margin: 9.5vh -5vw;
+}
+.dropdown-content p, .dropdown-content a{
+    display: flex;
+    align-items: center;
+    margin-left: 2vw;
+    font-size: 2vh;
+    text-decoration: none;
+    height: 5vh;
+    width: 100%;
+    position: relative;
+}
+
+.dropdown-content a{
+    color: green;
+}
+
+footer {
+    height: 30vh;
+    width: 100vw;
+    
+}
+.footerContent{
+    width: 100%;
+    height: 100%;
+}
+    .footerContent img{
+        width: 10vw;
+        height: 10vw;
+        float: left;
+        margin: 1vh 2.5vw 0 2.5vw;
+        border-radius: 20%;
+    }
+    .footerContent h4{
+        margin-top: 1vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 70vw;
+        padding: 0 10vw 0 10vw;
+        height: 4vh;
+        font-size: 100%;
+        float: left;
+        
+    }
+    .footerContent li{
+        height: 7.5vw;
+        width: calc(70vw/3);
+        float: left;
+        list-style-type: none;
+        flex-direction: row;
+    }
+    .footerContent li a{
+        height: 60%;
+        width: calc(70vw/3);
+        font-size: 1.5vh;
+        color: blue;
+        text-decoration: none;
+        float: left;
+    }
+    
+    .footerContent li a:hover{
+        text-decoration: underline;
+        color: green;
+    }
+.media{
+    width: 20vw;
+    float: left;
+    height: 5vh;
+    display: flex;
+    position: relative;
+}
+    .media p {
+        height: 100%;
+        width: 100%;
+        color: blue;
+        padding-right: 10%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        font-size: 2vw;
+    }
+.jp_social{
+    height: 5vh;
+    width: 60vw;
+    float: left;
+    display: flex;
+    position: relative;
+}
+    .jp_social, .jp_social a, .jp_social a img{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .jp_social a{
+        height: 5vh;
+        width: 10%;
+        display: flex;
+        float: left;
+        flex-direction: row;
+    }
+    .jp_social a img{
+        height: 6vh;
+        width: 6vh;
+        float: left;
+        position: relative;
+    }

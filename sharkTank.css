@@ -10,14 +10,40 @@
         position: fixed;
         z-index: 2;
     }
+    .socialMedia{
+        height: 10vh;
+        width: 60vw;
+        float: left;
+        display: flex;
+        position: relative;
+    }
+        .socialMedia, .socialMedia a, .socialMedia a img{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+        .socialMedia a{
+            height: 5vh;
+            width: 10%;
+            display: flex;
+            float: left;
+            flex-direction: row;
+        }
+        .socialMedia a img{
+            height: 6vh;
+            width: 6vh;
+            float: left;
+            position: relative;
+        }
     .logo{
-        margin-left: 2.5vw;
+        margin-left: calc(50vw - 20vh);
     }
         .logo a{
-            background: url("images/komi.png");
+            background: url("images/sayLess.png");
             background-repeat:  no repeat;
             background-position: center top;
             background-size:  cover;
+            border: 1px solid gray;
         }
         .logo a:hover{
             border: 1px solid white;
@@ -44,8 +70,12 @@
         .Royal h1, .Royal h2, .Royal h3, .Coffee h1, .Coffee h2, .Coffee h3, .Bervage h1, .Bervage h2, .Bervage h3, .Team h1, .Team h2, .Team h3{
             background-color: white;
             font-size: 2vw;
+            font-family:Georgia, 'Times New Roman', Times, serifF
         }
-
+        .Royal h1, .Coffee h1, .Bervage h1, .Team h1{
+            justify-content: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
         .Royal h3, .Coffee h3, .Bervage h3, .Team h3{
         border-bottom: 1px solid black;
         }
@@ -60,14 +90,17 @@
             background-position: center;
             background-size:  cover;
         }
-        .Coffee{
-           
-        }
         .Bervage{
             background: url(images/food1.png);
             background-repeat:  no repeat;
             background-position: center;
             background-size:  cover;
+        }
+        .Team{
+            background: url(images/team.png);
+            background-repeat:  no repeat;
+                background-position: center;
+                background-size:  cover;
         }
     .orderButton, h1{
         width: 0;
@@ -79,40 +112,7 @@
         display: block;
         background-color: black;
     }
-    .sideSticker{
-        width: 100vw;
-        height: 10vh;
-        position: relative;
-    }
-        .sideSticker h20:active, .sideSticker h20:hover, .sideSticker h3:active, .sideSticker h3:hover{
-            opacity: 0;
-            transition:opacity 3s;
-        }
-        .sideSticker h20{
-            background: url("images/deathPara.png");
-            height: 20vw;
-            width: 20vw;
-            float: left;
-        }
-        .sideSticker h17{
-            height: 20vw;
-            width: 60vw;
-            float: left;
-        }
-        .sideSticker h3{
-            background: url("images/welcomeMaid.png");
-            height: 20vw;
-            width: 20vw;
-            float: right;
-        }
-        .sideSticker h20, .sideSticker h3, .language h7{
-            background-repeat:  no repeat;
-            background-position: center;
-            background-size:  cover;
-        }
-        .sideSticker h20, .sideSticker h17, .sideSticker h3{
-            border-bottom: 1px solid white;
-        }
+
     .bottomContent{
         height: 30vh;
         width: 100vw;
@@ -121,6 +121,9 @@
             height: 20vh;
             width: 20vw;
             font-size: 90%;
+            background-color: white;
+            margin-top: 5vh;
+            border-bottom: 1px solid black;
         }
         .about, .community, .customer, .careers, .contact{
             text-decoration: none;
@@ -136,24 +139,25 @@
 
             text-align: left;
             font-size: 100%;
-            color: white;
+            color: black;
         }
         .about a:hover, .community a:hover, .customer a:hover, .careers a:hover, .contact a:hover{
             text-decoration: underline;
+            color: lightblue;
         }
 footer {
     height: 10vh;
     width: 100vw;
-    border-top: 1px solid white;
-
+    border-top: 1px solid black;
+    background-color: white;
 }
     .footerContent{
         width: 100vw;
         height: 3vw;
     }
         .footerContent img{
-            width: 30vw;
-            height: 30vw;
+            width: 20vw;
+            height: 20vw;
             float: left;
             margin-left: 35vw;
             margin-top: -5vh;
@@ -169,10 +173,9 @@ footer {
             justify-content: center;
             color: blue;
             width: 100vw;
-            padding: 0 10vw 0 10vw;
+            padding: 2% 10vw;
             height: 4vh;
             font-size: 100%;
-
             float: left;
         }
         .footerContent li{
@@ -231,15 +234,21 @@ footer {
                 justify-content: center;
                 position: relative;
             }
-            header, article, footer, .navigation{
+            header, article, .navigation{
                 background-color: black;
+            }
+            article{
+                background: url(images/cafeBaka.png);
+                background-repeat:  no repeat;
+                background-position: center;
+                background-size:  cover;
             }
 /* Mobile Styles */
 @media only screen and (max-width: 500px) {
     body {
         width: 100vw;
         height: auto;
-        background-color: black ;
+
 
     }
 
@@ -303,9 +312,6 @@ footer {
         color: blue;
     }
 
-    .signIn{
-        font-size: 0;
-    }
 
     article {
         width: 100vw;
@@ -338,7 +344,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5;
 
 
@@ -398,7 +403,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5
     }
     .Coffee h2 {
@@ -450,7 +454,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
 
 
@@ -509,7 +512,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5
 
 
@@ -545,33 +547,17 @@ footer {
         border: 2px solid black;
         margin-left: 20%;
     }
-    .sideSticker{
-        width: 100vw;
-        height: 15vh;
-    }
-    .sideSticker h20{
-        height :100%;
-        width: 30vw;;
-        margin-left: -1vw;
-    }
-    .sideSticker h17{
-        height: 100%;
-        width: 40vw;
-        float: left;
-    }
-    .sideSticker h3{
-        height:100%;
-        width: 30vw;
-    }
     
     .bottomContent{
         height: 20vh;
         width: 100vw;
+        background-color: white;
     }
         .bottomContent p{
             height: 20vh;
             width: calc(100vw/3);
             font-size: 90%;
+            background-color: white;
         }
         .about, .community, .customer, .careers, .contact{
             text-decoration: none;
@@ -596,7 +582,6 @@ footer {
         height: 35vh;
         width: 100vw;
         margin-top: 5vh;
-        
     }
     .media{
         width: 100vw;
@@ -723,7 +708,7 @@ footer {
         width: 200%;
         display: none;
         position: absolute;
-        margin-top: 15vh;
+        margin: 15vh -5vw;
         background-color: black;
     }
     .dropdown-content p, .dropdown-content a{
@@ -748,30 +733,11 @@ footer {
         margin-left: 2vw;
     } 
     
-    .signIn{
-        width: 18%;
-        height: 13vh;
-        margin: 1vh 1vw;
-        text-decoration: none;
-        text-align: center;
-        word-wrap: break-word;
-        font-size: calc(3vh * 9/16);
-        overflow: hidden ;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        float: right;
-
-    }
-    .signIn:hover {
-        border: 1px solid white;
-    }
 
     article {
         width: 100vw;
         height: 137vh;
-        padding: 0;
-
+        margin-top: 5vh;
         box-sizing: border-box;
         overflow: hidden;
         z-index: 1;
@@ -787,7 +753,7 @@ footer {
         height: 40vh;
         background-color: red;
         float: left;
-        margin: 0 0 5vh 5%;
+        margin: 5vh 0 5vh 5%;
         overflow: hidden;
 
     }
@@ -807,7 +773,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
         font-size: 100%;
     }
@@ -853,7 +818,7 @@ footer {
         background-color: green;
         float: right;
         margin-right: 5%;
-        margin-bottom: 5vh;
+        margin: 5vh 0;
         overflow: hidden;
     }
     .Coffee p{
@@ -870,7 +835,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
   
 
@@ -939,7 +903,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
 
 
@@ -981,7 +944,7 @@ footer {
     .Team {
         width: 42.5%;
         height: 40vh;
-        background-color: violet;
+        background-color: white;
         float: right;
         margin: 0 5% 5vh 0;
 
@@ -1002,7 +965,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
         
 
@@ -1040,15 +1002,10 @@ footer {
         margin-left: 20%;
     }
 
-    .sideSticker{
-        width: 100%;
-        height: 20vh;
-        position: relative;
-    }
-
 footer {
-    height: 32vh;
+    height: 30vh;
     width: 100vw;
+
 }
     .footerContent img, .footerContent h4, .footerContent li, .footerContent li a{
             display: flex;
@@ -1168,14 +1125,16 @@ footer {
         margin: 0 0 5% 0;
         border: 1px solid gray;
         position: fixed;
+        z-index: 1;
     }
 
     .logo {
-        height: 10vh;
-        width: 10vh;
+        height: 20vh;
+        width: 20vh;
         position: absolute;
         float: left;
-        margin-left: 1%;
+        margin-left: calc(50vw - 10vh);
+        z-index: 4;
     }
 
     .logo a {
@@ -1186,7 +1145,7 @@ footer {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
-        
+        z-index: 7;
     }
 
     .language{
@@ -1231,7 +1190,7 @@ footer {
         position: absolute;
         border: 1px solid white;
         z-index: 5 !important;
-        margin-top: 9.5vh;
+        margin: 9.5vh -5vw;
     }
     .dropdown-content p, .dropdown-content a{
         display: flex;
@@ -1247,38 +1206,22 @@ footer {
     .dropdown-content a{
         color: green;
     }
-    .signIn{
-        width: 10%;
-        height: 8vh;
-        margin: 1vh 1vw;
-        text-decoration: none;
-        text-align: center;
-        word-wrap: break-word;
-        font-size: calc(3vh * 9/16);
-        overflow: hidden ;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        float: right;
-
-    }
-    .signIn:hover {
-        border: 1px solid white;
-    }
 
     article {
         width: 100vw;
-        height: 177vh;
+        height: 155vh;
         margin: 0;
-        padding: 0;
+        margin-top: 5vh;
         box-sizing: border-box;
+        background: url(images/cafeBaka.png);
     }
 
     .Royal{
         width: 40%;
         height: 60vh;
         background-color: red;
-        margin-bottom: 5vh;
+        margin: 5vh 0;
+
         overflow: hidden;
         float: left;
         margin-left: 7.5%;
@@ -1299,7 +1242,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
 
         
@@ -1346,7 +1288,7 @@ footer {
         width: 40%;
         height: 60vh;
         background-color: green;
-        margin-bottom: 5vh;
+        margin: 5vh 0;
         
         float: right;
         margin-right: 7.5%;
@@ -1365,7 +1307,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
         
     }
@@ -1432,7 +1373,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
         
 
@@ -1474,7 +1414,7 @@ footer {
     .Team {
         width: 40%;
         height: 60vh;
-        background-color: violet;
+        background-color: white;
         margin-bottom: 5vh;
         
         float: right;
@@ -1495,7 +1435,6 @@ footer {
         color: black;
         display: flex;
         align-items: center;
-        justify-content: left;
         padding-left: 5%;
 
 
@@ -1533,47 +1472,47 @@ footer {
 
     }
     footer {
-        margin-top: 10vh;
-        height: 25vh;
+        height: 30vh;
         width: 100vw;
+        
     }
     .footerContent{
         width: 100%;
         height: 100%;
-
     }
         .footerContent img{
-            width: 15vh;
-            height: 15vh;
+            width: 10vw;
+            height: 10vw;
             float: left;
-            margin: 1.5vw;
-            border-radius: 50%;
+            margin: 1vh 2.5vw 0 2.5vw;
+            border-radius: 20%;
         }
         .footerContent h4{
             margin-top: 1vh;
             display: flex;
             align-items: center;
             justify-content: flex-start;
-            width: 80vw;
+            width: 70vw;
             padding: 0 10vw 0 10vw;
             height: 4vh;
             font-size: 100%;
             float: left;
+            
         }
         .footerContent li{
-            width: 100vw;
             height: 7.5vw;
-            width: calc((90vw -15vh)/ 3.4);
+            width: calc(70vw/3);
             float: left;
             list-style-type: none;
             flex-direction: row;
         }
         .footerContent li a{
             height: 60%;
-            width: calc(80vw/3);
+            width: calc(70vw/3);
             font-size: 1.5vh;
             color: blue;
             text-decoration: none;
+            float: left;
         }
         
         .footerContent li a:hover{
